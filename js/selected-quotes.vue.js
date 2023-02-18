@@ -1,6 +1,7 @@
 const SelectedQuotes = {
     template: `
         <div id="content">
+            Lone Wolf playing in the distance...
             <audio controls id="lone-wolf-audio">
               <source src="../resources/music/lone-wolf-10374.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
