@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>Bastrich Journal - Philosophy</title>
+
+    <link rel="stylesheet" href="/style/style.css"/>
+</head>
+<body onload="renderArticlesList()">
+<header id="header">
+    <div>
+        <div id="title">
+            Bastrich Journal
+        </div>
+        <div id="title-description">
+            Articles to the variety of themes by Daniil Bastrich
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <a href="/index.html"><li class="border-left border-right"><span>About</span></li></a>
+            <a href="/pages/tech.html"><li class="border-right"><span>Technical articles</span></li></a>
+            <a href="/pages/art.html"><li class="border-right"><span>My Art</span></li></a>
+            <a href="/pages/publicism.html"><li class="border-right"><span>Publicism</span></li></a>
+            <a href="/pages/life.html"><li><span>Life stories</span></li></a>
+            <a href="/pages/philosophy.html"><li class="border-left border-right"><span>Philosophy</span></li></a>
+        </ul>
+    </nav>
+</header>
+
+<div id="content">
+    Loading...
+    <script id="template" type="x-tmpl-mustache">
+        <ul id="articles-list">
+            {{#articles}}
+            <a href="/pages/article.html">
+                <li>
+                    <div class="title">
+                        <div class="name">{{title}}</div>
+                        <div class="datetime">{{datetime}}</div>
+                    </div>
+                    <div class="preview">{{preview}}</div>
+                </li>
+            </a>
+            {{/articles}}
+        </ul>
+    </script>
+</div>
+
+<footer>
+    Daniil Bastrich, 2021
+</footer>
+
+<script src="/lib/mustache.js"></script>
+<script src="/src/render.js"></script>
+
+</body>
+</html>

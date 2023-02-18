@@ -1,0 +1,149 @@
+/*import fonts*/
+@font-face {
+    font-family: 'GreatVibes-Regular'; /*a name to be used later*/
+    src: url('../resources/fonts/GreatVibes-Regular.ttf'); /*URL to font*/
+}
+
+/*header style*/
+header {
+    width: 100%;
+    margin: auto;
+}
+
+header nav {
+    width: 90%;
+    margin: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 25pt;
+    transform: skewX(-20deg);
+    padding: 10px;
+    border-radius: 5px;
+    margin: -2px;
+}
+
+.border-left {
+    border-left-style: dotted;
+}
+
+.border-right {
+    border-right-style: dotted;
+}
+
+
+@media (max-width: 400px) {
+    header nav ul li {
+        border-left-style: dotted;
+        border-right-style: dotted;
+    }
+}
+
+header nav ul li span {
+    display: inline-block;
+    transform: skewX(20deg);
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li:hover {
+    background-color: white;
+    color: black;
+    font-size: 25pt;
+}
+
+#title {
+    font-family: GreatVibes-Regular, fantasy;
+    font-size: 100pt;
+    color: white;
+    text-align: center;
+}
+
+#title-description {
+    font-style: italic;
+    text-align: right;
+    vertical-align: top;
+    margin-top: -50px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+/*content style*/
+body {
+    background-color: rgb(70, 130, 180);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*list of articels*/
+#articles-list {
+    padding: 0;
+}
+
+#articles-list li {
+    list-style-type: none;
+    background-color: rgba(255, 255, 220, .47);
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#articles-list li:hover {
+    background-color: beige;
+}
+
+#articles-list li .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+#articles-list li .name{
+    font-weight: bold;
+}
+
+#articles-list li .datetime{
+    font-style: italic;
+}
+
+#articles-list a {
+    color: inherit;
+}
+
+#content h2 {
+    text-align: center;
+}
+
+#content #article-text {
+    text-align: justify;
+}
+
+#content #video {
+    text-align: center;
+}
+
+#about img {
+    width: 30%;
+    margin: 2%;
+    float: left;
+}
+
+/*footer*/
+footer {
+    clear: both;
+    position: relative;
+    height: 20px;
+    margin-top: -10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
