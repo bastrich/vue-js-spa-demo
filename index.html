@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />-->
 
-    <title>Bastrich Journal - About</title>
+    <title>Wolf Brotherhood</title>
 
+    <!--js libraries-->
+    <script src="lib/vue.global.js"></script>
+    <script src="lib/vue-router.global.js"></script>
+
+    <!--structure components-->
+
+    <!--header-->
+    <script src="js/navigation.vue.js"></script>
+    <script src="js/header.vue.js"></script>
+
+    <!--pages-->
+    <script src="js/about.vue.js"></script>
+    <script src="js/rules.vue.js"></script>
+    <script src="js/selected-quotes.vue.js"></script>
+    <script src="js/meeting-schedule.vue.js"></script>
+    <script src="js/join-us.vue.js"></script>
+
+    <!--footer-->
+    <script src="js/footer.vue.js"></script>
+
+    <!--styles-->
     <link rel="stylesheet" href="style/style.css"/>
+    <style>
+        .section {
+            margin-top: 2em;
+        }
+    </style>
 </head>
 <body>
-<header id="header">
-    <div>
-        <div id="title">
-            Wolf Brotherhood
-        </div>
-        <div id="title-description">
-            Articles to the variety of themes by Daniil Bastrich
-        </div>
-    </div>
-    <nav>
-        <ul>
-            <a href="/index.html"><li class="border-left border-right"><span>About</span></li></a>
-            <a href="/pages/tech.html"><li class="border-right"><span>Technical articles</span></li></a>
-            <a href="/pages/art.html"><li class="border-right"><span>My Art</span></li></a>
-            <a href="/pages/publicism.html"><li class="border-right"><span>Publicism</span></li></a>
-            <a href="/pages/life.html"><li><span>Life stories</span></li></a>
-            <a href="/pages/philosophy.html"><li class="border-left border-right"><span>Philosophy</span></li></a>
-        </ul>
-    </nav>
-</header>
+    <div id="app"></div>
+    <script>
+        const routes = [
+            {
+                path: "/",
+                component: About,
+            },
+            {
+                path: "/about",
+                component: About,
+            },
+            {
+                path: "/rules",
+                component: Rules,
+            },
+            {
+                path: "/selected-quotes",
+                component: SelectedQuotes,
+            },
+            {
+                path: "/meeting-schedule",
+                component: MeetingSchedule,
+            },
+            {
+                path: "/join-us",
+                component: JoinUs,
+            }
+        ];
 
-<div id="content">
-    <div id="about">
-        <img src="resources/photo.jpeg"/>
-        <p>
-            Hi Everyone,
-        </p>
-        <p>
-            My name is Daniil Bastrich and I publish my articles on this web-site.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus, metus a ullamcorper pulvinar, odio
-            lorem suscipit metus, eu vestibulum nulla massa ut odio. Sed vel tortor in lectus venenatis elementum a
-            pulvinar enim. Quisque et euismod lacus. Sed eleifend purus quam, a gravida dui egestas vitae. Quisque et
-            lobortis lectus. Maecenas eu nibh metus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Cras ornare vulputate orci in euismod. Aenean eget convallis turpis.</p>
-        <p>Morbi ut feugiat leo. Nam sodales ex iaculis libero accumsan vulputate. Sed erat ligula, dapibus non lacus
-            vel,
-            efficitur fermentum massa. Curabitur iaculis tincidunt nulla. Fusce tortor magna, feugiat nec nisi vitae,
-            aliquam consequat tellus. In hac habitasse platea dictumst. Aenean commodo arcu et lobortis fermentum.
-            Praesent
-            congue, ligula placerat dapibus ultrices, purus lacus mattis lectus, vel aliquet leo odio ac ex. Praesent
-            dignissim quam non iaculis viverra. Vivamus enim ante, porttitor in justo eu, tempus consectetur nibh. Morbi
-            placerat, nunc nec rhoncus volutpat, tellus diam ullamcorper risus, ac suscipit justo velit at nulla.</p>
-        <p>Vivamus non pulvinar leo, quis pellentesque mi. Ut ac facilisis metus. Ut eu diam sed quam sollicitudin
-            aliquet
-            non et sem. Cras sit amet odio pellentesque, porta ligula et, facilisis ante. Pellentesque ullamcorper lacus
-            lacus, at vestibulum sapien euismod vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Vestibulum iaculis diam eros, nec sodales ipsum ultrices porttitor. Morbi porta leo ac blandit
-            consequat.</p>
-        <p>Nulla id suscipit purus. In convallis arcu id lacus bibendum, et tristique ligula maximus. Duis tincidunt,
-            neque
-            quis dapibus consequat, nibh erat tristique leo, sit amet ornare nunc massa ac dui. Nam ac convallis odio,
-            et
-            fermentum ligula. Phasellus id sodales orci. Ut venenatis sollicitudin nulla, ut sollicitudin erat vulputate
-            a.
-            Nam accumsan, mi quis commodo pulvinar, tellus ipsum accumsan magna, feugiat rutrum elit ligula et ligula.
-            In
-            ante nisi, ultricies eu maximus nec, venenatis in nisi. Etiam lacinia dictum eros, quis aliquam urna rhoncus
-            sit
-            amet. Phasellus sit amet hendrerit dui, non sollicitudin nulla. Nulla ut nisl turpis. Donec pretium dapibus
-            turpis, id lacinia diam efficitur in. Curabitur tempus mattis leo eget faucibus. Nulla ultricies, eros
-            dictum
-            congue iaculis, lacus augue finibus nunc, eu pellentesque ante urna at lacus. Maecenas sed sem at quam
-            ultrices
-            mollis. Duis nec ultrices purus.</p>
-        <p>Praesent in vehicula erat, sit amet sollicitudin metus. Ut scelerisque ultrices nulla, viverra sodales turpis
-            suscipit non. In vel fermentum velit. Nunc at diam sit amet mauris aliquet aliquam. Nunc augue diam, euismod
-            ac
-            lorem at, tempor aliquam libero. Quisque id nisl vulputate, pharetra erat a, pretium ligula. Vivamus ac arcu
-            id
-            eros convallis venenatis non sit amet purus. Maecenas rutrum dignissim tellus vel sodales. Mauris eleifend
-            quam
-            nec ipsum luctus sodales. Pellentesque id lorem sem.</p>
+        const router = VueRouter.createRouter({
+            routes: routes,
+            history: VueRouter.createWebHashHistory("/")
+        });
 
-        <div style="text-align: center">
-            <a href="mailto:bastrich@bk.ru">Mail me</a>
-        </div>
-    </div>
-</div>
+        const app = Vue.createApp({
+            template: `
+                <Header/>
+                <router-view></router-view>
+                <Footer/>
+            `,
+            components: {
+                Header: Header,
+                Navigation: Navigation,
+                About: About,
+                Rules: Rules,
+                SelectedQuotes: SelectedQuotes,
+                MeetingSchedule: MeetingSchedule,
+                JoinUs: JoinUs,
+                Footer: Footer
+            }
+        });
+        // app.component('Header', Header);
+        app.use(router);
+        app.mount('#app');
 
-<footer style="top: 20px">
-    Daniil Bastrich, 2021
-</footer>
+        document.getElementById("selected-quotes-link").addEventListener("click", function () {
+            document.getElementById("lone-wolf-audio").play();
+        });
+    </script>
+
 </body>
 </html>
