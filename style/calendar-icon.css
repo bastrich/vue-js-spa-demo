@@ -14,11 +14,11 @@ body { font-family:"Lucida Sans Unicode";}
     top:0em;
     left:1em;
     padding-top:5px;
-    width:80px;
+    width:200px;
     background:#ededef;
     background: -webkit-gradient(linear, left top, left bottom, from(#ededef), to(#ccc));
     background: -moz-linear-gradient(top,  #ededef,  #ccc);
-    font:bold 30px/60px "Lucida Sans Unicode", Arial Black, Arial, Helvetica, sans-serif;
+    font:bold 75px/150px "Lucida Sans Unicode", Arial Black, Arial, Helvetica, sans-serif;
     text-align:center;
     color:#000;
 

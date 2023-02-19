@@ -1,9 +1,45 @@
 const MeetingSchedule = {
     template: `
         <div id="content">
+            <p><span>Attention</span></p>
             Our upcoming meetings:
-            <p class="calendar">7 <em>February</em></p>
-            <p class="calendar">8 <em>February</em></p>
+            
+            <p v-for="{day, month} in meetings" :key="index" class="calendar">{{day}} <em>{{month}}</em></p>
         </div>
-    `
+    `,
+    data: function() {
+        return {
+            meetings: [
+                {
+                    day: 30,
+                    month: 'February'
+                },
+                {
+                    day: 30,
+                    month: 'March'
+                },
+                {
+                    day: 30,
+                    month: 'March'
+                },
+                {
+                    day: 30,
+                    month: 'March'
+                },
+                {
+                    day: 30,
+                    month: 'March'
+                },
+                {
+                    day: 30,
+                    month: 'March'
+                },
+                {
+                    day: 30,
+                    month: 'March'
+                }
+
+            ]
+        };
+    }
 };
