@@ -1,6 +1,6 @@
 const Header = {
     template: `
-        <header id="header">
+        <header>
             <div>
                 <div id="title">
                     The Wolf Brotherhood
@@ -9,10 +9,6 @@ const Header = {
                     Everyone has a wolf inside but only the chosen are mighty to awaken it
                 </div>
             </div>
-            <Navigation/>
         </header>
-    `,
-    components: {
-        Navigation: Navigation
-    }
+    `
 };

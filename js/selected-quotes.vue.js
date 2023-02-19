@@ -1,24 +1,22 @@
 const SelectedQuotes = {
     template: `
-        <div id="content">
-            <div id="quotes">
-                <div id="quotes-header">
-                    <p>Lone Wolf playing in the distance...</p>
-                    <audio controls id="lone-wolf-audio">
-                      <source src="../resources/music/lone-wolf-10374.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            
-                <div id="quotes-block">
-                    <div v-for="{text, author} in quotes" :key="index" class="quote">
-                        <i class="fas fa-quote-left fa2"></i>
-                        <div class="text">
-                            <i class="fas fa-quote-right fa1"></i>
-                            <div class="quote-content">
-                                <p class="quote-text">{{text}}</p>
-                                <p class="quote-author">{{author}}</p>
-                            </div>
+        <div id="quotes">
+            <div id="quotes-header">
+                <p>Lone Wolf playing in the distance...</p>
+                <audio controls id="lone-wolf-audio">
+                  <source src="../resources/music/lone-wolf-10374.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        
+            <div id="quotes-block">
+                <div v-for="{text, author} in quotes" class="quote">
+                    <i class="fas fa-quote-left fa2"></i>
+                    <div class="text">
+                        <i class="fas fa-quote-right fa1"></i>
+                        <div class="quote-content">
+                            <p class="quote-text">{{text}}</p>
+                            <p class="quote-author">{{author}}</p>
                         </div>
                     </div>
                 </div>

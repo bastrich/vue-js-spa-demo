@@ -1,10 +1,11 @@
 const MeetingSchedule = {
     template: `
-        <div id="content">
-            <p><span>Attention</span></p>
-            Our upcoming meetings:
-            
-            <p v-for="{day, month} in meetings" :key="index" class="calendar">{{day}} <em>{{month}}</em></p>
+        <div id="schedule">
+            <p><span class="attention">Attention</span>: Due to COVID-19 restrictions the schedule is a subject of change.</p>
+            <p>Our upcoming meetings:</p>
+            <div id="schedule-layout">
+                 <p v-for="{day, month} in meetings" class="calendar">{{day}} <em>{{month}}</em></p>
+            </div>
         </div>
     `,
     data: function() {
@@ -15,30 +16,29 @@ const MeetingSchedule = {
                     month: 'February'
                 },
                 {
-                    day: 30,
+                    day: 31,
                     month: 'March'
                 },
                 {
-                    day: 30,
+                    day: 32,
                     month: 'March'
                 },
                 {
-                    day: 30,
-                    month: 'March'
+                    day: 1,
+                    month: 'April'
                 },
                 {
-                    day: 30,
-                    month: 'March'
+                    day: 1,
+                    month: 'May'
                 },
                 {
-                    day: 30,
-                    month: 'March'
+                    day: 19,
+                    month: 'June'
                 },
                 {
-                    day: 30,
-                    month: 'March'
+                    day: 4,
+                    month: 'July'
                 }
-
             ]
         };
     }

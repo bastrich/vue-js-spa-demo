@@ -34,7 +34,7 @@ header {
     margin-bottom: 70px;
 }
 
-#content {
+main {
     display: flex;
     flex-direction: column;
     color: lemonchiffon;

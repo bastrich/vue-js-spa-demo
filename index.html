@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="style/navigation.css"/>
     <link rel="stylesheet" href="style/rules.css"/>
     <link rel="stylesheet" href="style/selected-quotes.css"/>
-    <link rel="stylesheet" href="style/calendar-icon.css"/>
-    <link rel="stylesheet" href="style/join-form.css"/>
+    <link rel="stylesheet" href="style/meeting-schedule.css"/>
+    <link rel="stylesheet" href="style/join-us.css"/>
 </head>
 <body>
     <div id="app"></div>
@@ -73,7 +73,10 @@
         const app = Vue.createApp({
             template: `
                 <Header/>
-                <router-view></router-view>
+                <Navigation/>
+                <main>
+                  <router-view/>
+                </main>
                 <Footer/>
             `,
             components: {

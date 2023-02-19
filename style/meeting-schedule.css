@@ -1,14 +1,20 @@
-* {  -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    -webkit-transition: all .1s linear 0;
-    -moz-transition: all .1s linear 0;
-    transition: all .1s linear 0;
-
+.attention {
+    color: orangered;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
 }
-body { font-family:"Lucida Sans Unicode";}
 
+#schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+#schedule-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .calendar{
     top:0em;
@@ -30,6 +36,8 @@ body { font-family:"Lucida Sans Unicode";}
     -moz-box-shadow:0 2px 2px #888;
     -webkit-box-shadow:0 2px 2px #888;
     box-shadow:0 2px 2px #888;
+
+    margin: 10px;
 }
 
 .calendar em{
