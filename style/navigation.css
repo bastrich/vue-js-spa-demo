@@ -4,6 +4,8 @@
     src: url('../resources/fonts/DracuFrankenWolfBB.otf'); /*URL to font*/
 }
 
+
+
 nav ul {
     position: relative;
     display: flex;
@@ -11,6 +13,13 @@ nav ul {
     gap: 30px;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 1200px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
 nav ul li {
     position: relative;
     list-style: none;

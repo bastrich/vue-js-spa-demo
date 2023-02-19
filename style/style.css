@@ -9,6 +9,7 @@ body {
     background-image: url("../resources/images/background.jpg");
     background-attachment: fixed;
     margin: 0 15%;
+    min-width: 300px;
 }
 
 /*header style*/
@@ -19,19 +20,33 @@ header {
 
 #title {
     font-family: direwolf, fantasy;
-    font-size: 100pt;
+    font-size: 9vw;
     color: white;
     text-align: center;
 }
 
 #slogan {
     font-style: italic;
-    font-size: 18pt;
+    font-size: 1.9vw;
     color: wheat;
     text-align: right;
     vertical-align: top;
-    margin-right: 100px;
-    margin-bottom: 70px;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0 3%;
+    }
+    #title {
+        font-size: 5em;
+    }
+    #slogan {
+        font-size: 1.5em;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
 }
 
 main {
