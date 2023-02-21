@@ -1,3 +1,4 @@
+/*style for COVID disclaimer*/
 .attention {
     color: orangered;
     text-transform: uppercase;
@@ -5,6 +6,7 @@
     font-weight: bold;
 }
 
+/*flexbox layout for Meeting Schedule page*/
 #schedule {
     display: flex;
     flex-direction: column;
@@ -16,6 +18,7 @@
     flex-wrap: wrap;
 }
 
+/*calendar icon styles*/
 .calendar{
     top:0em;
     left:1em;

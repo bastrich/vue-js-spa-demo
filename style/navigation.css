@@ -1,11 +1,10 @@
-/*import fonts*/
+/*import font*/
 @font-face {
     font-family: 'DracuFrankenWolfBB'; /*a name to be used later*/
     src: url('../resources/fonts/DracuFrankenWolfBB.otf'); /*URL to font*/
 }
 
-
-
+/*flexbox layout for navigation menu*/
 nav ul {
     position: relative;
     display: flex;
@@ -14,10 +13,33 @@ nav ul {
     justify-content: space-around;
 }
 
+/*style for responsive navigation menu*/
 @media screen and (max-width: 1200px) {
     nav ul {
         flex-direction: column;
     }
+}
+
+/*style for navigation menu animation (reimplemented based of example from Reference 10) */
+/*css variables are used to avoid redundancy*/
+#about-nav {
+    --clr: mediumblue;
+}
+
+#rules-nav {
+    --clr: saddlebrown;
+}
+
+#selected-quotes-nav {
+    --clr: orchid;
+}
+
+#meeting-schedule-nav {
+    --clr: darkorange;
+}
+
+#join-us-nav {
+    --clr: lime;
 }
 
 nav ul li {
@@ -41,10 +63,8 @@ nav ul li a.router-link-active::before {
     overflow: hidden;
     width: 100%;
     border-right: 8px solid var(--clr);
-
     filter: drop-shadow(0 0 25px var(--clr))
 }
-
 
 nav ul li a::before {
     content: attr(data-text);
@@ -55,6 +75,7 @@ nav ul li a::before {
     transition: 1s;
     border-right: 8px solid var(--clr);
 }
+
 nav ul li a:hover::before {
     width: 100%;
     filter: drop-shadow(0 0 25px var(--clr))

@@ -1,6 +1,7 @@
+// template for footer
 const Footer = {
     template: `
-        <footer style="top: 20px">
+        <footer>
             &copy; 2023 The Wolf Brotherhood
         </footer>
     `

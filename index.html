@@ -10,25 +10,26 @@
     <script src="lib/vue.global.js"></script>
     <script src="lib/vue-router.global.js"></script>
 
-    <!--structure components-->
+    <!--js templates-->
 
     <!--header-->
-    <script src="js/navigation.vue.js"></script>
-    <script src="js/header.vue.js"></script>
+    <script src="js-templates/navigation.vue.js"></script>
+    <script src="js-templates/header.vue.js"></script>
 
     <!--pages-->
-    <script src="js/about.vue.js"></script>
-    <script src="js/rules.vue.js"></script>
-    <script src="js/selected-quotes.vue.js"></script>
-    <script src="js/meeting-schedule.vue.js"></script>
-    <script src="js/join-us.vue.js"></script>
+    <script src="js-templates/about.vue.js"></script>
+    <script src="js-templates/rules.vue.js"></script>
+    <script src="js-templates/selected-quotes.vue.js"></script>
+    <script src="js-templates/meeting-schedule.vue.js"></script>
+    <script src="js-templates/join-us.vue.js"></script>
 
     <!--footer-->
-    <script src="js/footer.vue.js"></script>
+    <script src="js-templates/footer.vue.js"></script>
 
     <!--styles-->
     <link rel="stylesheet" href="lib/fa-all.css"/>
-    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/global.css"/>
+    <link rel="stylesheet" href="style/about.css"/>
     <link rel="stylesheet" href="style/navigation.css"/>
     <link rel="stylesheet" href="style/rules.css"/>
     <link rel="stylesheet" href="style/selected-quotes.css"/>
@@ -36,8 +37,12 @@
     <link rel="stylesheet" href="style/join-us.css"/>
 </head>
 <body>
+    <!--Single Page Application container-->
     <div id="app"></div>
+
+    <!--Single Page Application initialization script-->
     <script>
+        // init routes
         const routes = [
             {
                 path: "/",
@@ -64,12 +69,12 @@
                 component: JoinUs,
             }
         ];
-
         const router = VueRouter.createRouter({
             routes: routes,
             history: VueRouter.createWebHashHistory("/")
         });
 
+        // init Single Page Application
         const app = Vue.createApp({
             template: `
                 <Header/>
@@ -90,10 +95,10 @@
                 Footer: Footer
             }
         });
-        // app.component('Header', Header);
         app.use(router);
         app.mount('#app');
 
+        //add onclick handler for playing music on the Selected Quotes page
         document.getElementById("selected-quotes-link").addEventListener("click", function () {
             document.getElementById("lone-wolf-audio").play();
         });

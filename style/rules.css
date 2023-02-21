@@ -1,10 +1,9 @@
+/*style for Rules list*/
 ul#rules {
     counter-reset: index;
     padding: 0;
-    /*max-width: 300px;*/
 }
 
-/* List element */
 ul#rules li {
     counter-increment: index;
     display: flex;
@@ -13,8 +12,6 @@ ul#rules li {
     box-sizing: border-box;
 }
 
-
-/* Element counter */
 ul#rules li::before {
     content: counters(index, ".", decimal-leading-zero);
     font-size: 1.5rem;
@@ -30,12 +27,11 @@ ul#rules li::before {
     -webkit-text-fill-color: transparent;
 }
 
-
-/* Element separation */
 ul#rules li + li {
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+/*style for li with YouTube video*/
 .video-li div {
     display: flex;
     flex-direction: column;
@@ -44,6 +40,7 @@ ul#rules li + li {
 
 .video-li div p {
     padding-bottom: 1%;
+    margin: 0;
 }
 
 

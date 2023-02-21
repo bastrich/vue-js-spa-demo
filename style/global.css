@@ -1,0 +1,76 @@
+/*import font*/
+@font-face {
+    font-family: 'direwolf'; /*a name to be used later*/
+    src: url('../resources/fonts/direwolf.ttf'); /*URL to font*/
+}
+
+/*global style*/
+body {
+    background-image: url("../resources/images/background.jpg");
+    background-attachment: fixed;
+    margin: 0 15%;
+    min-width: 300px;
+}
+
+/*header styles, vw is used for responsiveness*/
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#title {
+    font-family: direwolf, fantasy;
+    font-size: 9vw;
+    color: white;
+    text-align: center;
+}
+
+#slogan {
+    font-style: italic;
+    font-size: 1.9vw;
+    color: wheat;
+    text-align: right;
+    vertical-align: top;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+}
+
+/*responsive styles*/
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0 3%;
+    }
+    #title {
+        font-size: 5em;
+    }
+    #slogan {
+        font-size: 1.5em;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+/*global styles*/
+main {
+    display: flex;
+    flex-direction: column;
+    color: lemonchiffon;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+div#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/*footer style*/
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: auto;
+}

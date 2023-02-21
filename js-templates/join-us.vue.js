@@ -1,3 +1,4 @@
+// template for Join Us page
 const JoinUs = {
     template: `
         <div id="join-us">
@@ -17,6 +18,7 @@ const JoinUs = {
                         <label>Where did you know about us?</label>
                     </div>
                     <button onclick="alert('Thank you for the submission, now look around')">
+                        <!--spans for border animation-->
                         <span></span>
                         <span></span>
                         <span></span>

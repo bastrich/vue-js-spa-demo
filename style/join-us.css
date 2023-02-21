@@ -1,16 +1,14 @@
+/*flexbox layout for Join Us page*/
 #join-us {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+/*Join Us form styles*/
 .join-us-box {
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
     width: 400px;
     padding: 40px;
-    /*transform: translate(-50%, -50%);*/
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -58,6 +56,7 @@
     font-size: 12px;
 }
 
+/*Join Us form button styles*/
 .join-us-box form button {
     position: relative;
     display: inline-block;
@@ -73,6 +72,7 @@
     background: transparent;
 }
 
+/*Join Us form button animation style*/
 .join-us-box button:hover {
     background: #03e9f4;
     color: #fff;
@@ -83,6 +83,7 @@
     0 0 100px #03e9f4;
 }
 
+/*Join Us form button border animation style*/
 .join-us-box button span {
     position: absolute;
     display: block;

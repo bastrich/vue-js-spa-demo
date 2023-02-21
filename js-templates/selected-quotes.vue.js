@@ -1,3 +1,4 @@
+// template for Selected Quotes page
 const SelectedQuotes = {
     template: `
         <div id="quotes">
@@ -10,6 +11,7 @@ const SelectedQuotes = {
             </div>
         
             <div id="quotes-block">
+                <!--filling template with data-->
                 <div v-for="{text, author} in quotes" class="quote">
                     <i class="fas fa-quote-left fa2"></i>
                     <div class="text">
@@ -23,6 +25,7 @@ const SelectedQuotes = {
             </div>
         </div>
     `,
+    //array of quotes
     data: function() {
         return {
             quotes: [

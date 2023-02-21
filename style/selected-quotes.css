@@ -1,3 +1,4 @@
+/*flexbox layout for Selected Quotes page*/
 #quotes {
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@
     justify-content: space-around;
 }
 
+/*quoted box styles (reimplemented based of example from Reference 11) */
 .quote {
     background-color: transparent;
     border-radius: 3px;
@@ -50,7 +52,6 @@
     margin-bottom: 0;
     margin-top: 0;
 }
-
 
 .quote:before {
     content: '';

@@ -1,6 +1,9 @@
+// template for About page
 const About = {
     template: `
+        <!--description section-->
         <div id="about">
+            <!--descriptive photo with aly attribute-->
             <img src="resources/images/wolf-about.jpg" alt="armored wolf fighter"/>
             <div>
                 <p>
@@ -16,6 +19,7 @@ const About = {
                 </p>
             </div>
         </div>  
+        <!--spell section-->
         <p class="fire">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus, metus a ullamcorper pulvinar, odio
             lorem suscipit metus, eu vestibulum nulla massa ut odio. Sed vel tortor in lectus venenatis elementum a
             pulvinar enim. Quisque et euismod lacus. Sed eleifend purus quam, a gravida dui egestas vitae. Quisque et
