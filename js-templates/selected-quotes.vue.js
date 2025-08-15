@@ -5,7 +5,7 @@ const SelectedQuotes = {
             <div id="quotes-header">
                 <p>Lone Wolf playing in the distance...</p>
                 <audio controls id="lone-wolf-audio">
-                  <source src="../resources/music/lone-wolf-10374.mp3" type="audio/mpeg">
+                  <source src="resources/music/lone-wolf-10374.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
